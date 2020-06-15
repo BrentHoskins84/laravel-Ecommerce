@@ -20,6 +20,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '1',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(1);
 
         Product::create([
@@ -30,6 +31,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '2',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(2);
 
         Product::create([
@@ -40,6 +42,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '3',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(3);
 
         Product::create([
@@ -50,6 +53,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '4',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(1);
 
         Product::create([
@@ -60,6 +64,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '5',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(4);
 
         Product::create([
@@ -70,6 +75,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '5',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(1);
 
         Product::create([
@@ -80,6 +86,7 @@ class ProductTableSeeder extends Seeder
             'price' => '19099',
             'QTY' => '5',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(2);
 
         Product::create([
@@ -90,6 +97,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '5',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(4);
 
         Product::create([
@@ -100,6 +108,7 @@ class ProductTableSeeder extends Seeder
             'price' => '1999',
             'QTY' => '5',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(3);
 
         Product::create([
@@ -110,6 +119,7 @@ class ProductTableSeeder extends Seeder
             'price' => '15999',
             'QTY' => '5',
             'description' => 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.',
+            'featured' => true,
         ])->categories()->attach(3);
 
         Product::create([

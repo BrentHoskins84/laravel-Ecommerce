@@ -20,7 +20,7 @@
                 <div class="content">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-3 d-none d-md-block">
                                 <div class="single category">
                                     <h3 class="side-title">Category</h3>
                                     <ul class="list-unstyled">

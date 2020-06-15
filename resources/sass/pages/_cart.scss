@@ -1,0 +1,20 @@
+#cart{
+    tr:nth-child(2n+1){
+        background-color: transparent !important;
+    }
+
+    form{
+        margin: 0;
+    }
+
+    .cart-btn{
+        background-color: transparent;
+        color: black !important;
+
+        &:hover{
+            color: red !important;
+        }
+    }
+
+}
+

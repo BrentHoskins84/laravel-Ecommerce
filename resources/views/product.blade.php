@@ -62,7 +62,7 @@
                                 </div> <!-- row.// -->
                                 <div class="row">
                                     <div class="col-md-12 mt-5">
-                                        <p>{{$product->description}}</p>
+                                        <p>{!! $product->description !!}</p>
                                     </div>
                                 </div>
                             </div> <!-- card.// -->

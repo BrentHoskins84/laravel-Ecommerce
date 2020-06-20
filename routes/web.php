@@ -42,8 +42,12 @@ route::get('empty', function (){
 
 Auth::routes();
 
-Route::get('/admin/{opt?}', 'DashboardController@index')->middleware('can:admin')->name('admin')->where ('opt', '.*');
 
-//Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
-//    Route::resource('/users', 'UserController', ['except' => ['show', 'create', 'store']]);
-//});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

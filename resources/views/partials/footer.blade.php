@@ -1,21 +1,14 @@
-<!-- Footer -->
-<footer id="footer">
-    <div class="container">
-        <ul class="icons">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-        </ul>
-    </div>
-    <div class="copyright">
-        &copy; Untitled. All rights reserved.
-    </div>
-</footer>
 
-<!-- Scripts -->
-<script src="/js/skel.min.js""></script>
-<script src="{{ mix ('js/app.js') }}"></script>
-<script src="/js/jquery.scrollex.min.js""></script>
+<div class="container">
+    <ul class="icons">
+        @foreach($items as $menu_item)
+            <li><a href="{{ $menu_item->link() }}" class="icon {{ $menu_item->title }}"></a></li>
+        @endforeach
+{{--        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>--}}
+{{--        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>--}}
+{{--        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>--}}
+{{--        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>--}}
+    </ul>
+</div>
 
-@yield('extra-js')
+

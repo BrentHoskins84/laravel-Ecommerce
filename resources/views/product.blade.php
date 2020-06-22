@@ -25,7 +25,9 @@
                                     <aside class="col-sm-5 border-right">
                                         <article class="gallery-wrap">
                                             <div class="img-big-wrap">
-                                                <div> <a href="#"><img src="https://s9.postimg.org/tupxkvfj3/image.jpg"></a></div>
+                                                <div>
+                                                    <img class="w-100" src="{{ asset('storage/' . $product->image) }}" alt="product">
+                                                </div>
                                             </div> <!-- slider-product.// -->
                                         </article> <!-- gallery-wrap .end// -->
                                     </aside>

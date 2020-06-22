@@ -35,8 +35,8 @@
                 @foreach($products as $product)
                     <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                         <a href="{{route('shop.show', $product->slug)}}">
-                            <div class="card">
-                                <img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png" alt="Vans">
+                            <div class="card mb-3">
+                                <img class="card-img" src="{{ asset('storage/' . $product->image) }}" alt="Product">
     {{--                            <div class="card-img-overlay d-flex justify-content-end">--}}
     {{--                                <a href="#" class="card-link text-danger like">--}}
     {{--                                    <i class="fas fa-heart"></i>--}}

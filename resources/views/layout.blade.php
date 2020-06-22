@@ -13,13 +13,26 @@
 
 @include('partials.head')
 
-@include('partials.nav')
+{{ menu('main', 'partials.nav') }}
 
 @yield('banner')
 
 @yield('content')
 
-@include('partials.footer')
+<!-- Footer -->
+<footer id="footer">
+    {{ menu('footer', 'partials.footer') }}
+
+    <div class="copyright">
+        &copy; Untitled. All rights reserved.
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="/js/skel.min.js""></script>
+<script src="{{ mix ('js/app.js') }}"></script>
+<script src="/js/jquery.scrollex.min.js""></script>
+
+@yield('extra-js')
 
 </body>
 </html>

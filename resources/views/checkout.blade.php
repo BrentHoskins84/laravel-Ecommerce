@@ -74,11 +74,12 @@
 
                                             <!--email-->
                                             <div class="md-form mb-5">
-                                                <input type="text" id="email" class="form-control" placeholder="youremail@example.com" value="{{old('email')}}" required>
+                                                @if(auth()->user())
+                                                    <input type="text" id="email" class="form-control" placeholder="youremail@example.com" value="{{auth()->user()->email}}" readonly>
+                                                @else
+                                                    <input type="text" id="email" class="form-control" placeholder="youremail@example.com" value="{{old('emailstop')}}" required>
+                                                @endif
                                                 <label for="email" class="">Email</label>
-                                                <div class="invalid-feedback">
-                                                    Email is Required.
-                                                </div>
                                             </div>
 
                                             <!--address-->

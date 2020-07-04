@@ -50,7 +50,7 @@
                                             <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                                                 <a href="{{route('shop.show', $product->slug)}}">
                                                     <div class="card border-0 shadow-none my-4">
-                                                        <img class="card-img" src="{{ asset('storage/' . $product->image) }}" alt="Product">
+                                                        <img class="card-img" src="{{ productImage($product->image) }}" alt="Product">
                                                         <div class="card-body">
                                                             <h4 class="card-title float-none mb-1">{{$product->name}}</h4>
                                                             <h6 class="card-subtitle mb-2 text-muted">SKU: {{$product->SKU}}</h6>

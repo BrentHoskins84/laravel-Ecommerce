@@ -26,7 +26,7 @@
                                         <article class="gallery-wrap">
                                             <div class="img-big-wrap">
                                                 <div>
-                                                    <img class="w-100" src="{{ asset('storage/' . $product->image) }}" alt="product">
+                                                    <img class="w-100" src="{{ productImage($product->image) }}" alt="product">
                                                 </div>
                                             </div> <!-- slider-product.// -->
                                         </article> <!-- gallery-wrap .end// -->

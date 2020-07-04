@@ -24,7 +24,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/shop/cart', 'CartController@index')->name('cart.index');
 Route::post('/shop/cart', 'CartController@store')->name('cart.store');
-Route::get('/shop/checkout', 'CheckoutController@index')->name('checkout.index');
+Route::get('/shop/checkout', 'CheckoutController@index')->name('checkout.index')->middleware('auth');
+Route::get('/shop/checkout', 'CheckoutController@index')->name('guestCheckout.index');
 Route::post('/shop/checkout', 'CheckoutController@store')->name('checkout.store');
 Route::delete('/shop/cart/{product}', 'CartController@destroy')->name('cart.destroy');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
@@ -40,14 +41,12 @@ route::get('empty', function (){
     Cart::destroy();
 });
 
-Auth::routes();
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('logout', 'Auth\LoginController@logout');
